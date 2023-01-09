@@ -1,0 +1,546 @@
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+
+
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1400px;
+  margin: auto;
+}
+
+p {
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+/** Tritres et icones**/
+
+h1
+{
+  font-size: 26px;
+  font-weight: lighter;
+  letter-spacing: .1rem;
+  font-family: "shrikhand", cursive;
+}
+
+h2 
+{
+  font-size: 15px;
+  font-weight: 100;
+  margin-top: 20px;
+}
+
+.h2_trait 
+{
+  width: 10%;
+  margin-top: 5px;
+  height: 3px;
+  background-color: #99e2d0;
+  border: none;
+}
+
+h3
+{
+  font-size: 18px;
+  padding-bottom: 5px;
+}
+
+.header_logo
+ {
+  width: 165px;
+  height: 50px;
+}
+
+.footer_logo
+{
+  filter: invert(1);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100px;
+  height: 40px;
+}
+
+.image_page_ALaFrancaise
+{
+  background-image: url("../../images/restaurants/citerouge.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 257px;
+}
+
+.image_page_menu_LaNoteEnchantee
+{
+  background-image: url("../../images/restaurants/charone.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 257px;
+}
+
+.image_page_menu_LeDeliceDesSens
+{
+  background-image: url("../../images/restaurants/foliemericourt.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 257px;
+}
+
+.image_page_menu_LaPaletteDuGout
+{
+  background-image: url("../../images/restaurants/foliemericourt.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 257px;
+}
+
+.fa-arrow-left
+  {
+    color: #353535;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 5px;
+  }
+
+.fa-heart
+{
+  font-size: 23px;
+}
+
+
+.fa-utensils, .fa-handshake-angle 
+{
+  width: 14px;
+  font-size: 14px;
+  margin-right: 8px;
+  color: white;
+}
+
+/** comportement**/
+
+a.btn_commander:hover
+{
+	filter: brightness(1.25);
+	box-shadow: 3px 3px 5px grey;
+}
+
+/** Animation carte**/
+
+.hoverheart
+{
+  display: flex;
+  align-items: center;
+}
+.hoverheart:hover .hoverheart__content-solid {
+  opacity: 1;
+  transition: 0.3s ease-in-out;
+}
+.hoverheart:hover .hoverheart__content-light {
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+.hoverheart__content-solid {
+  font-size: 1.5rem;
+  position: absolute;
+  background: linear-gradient(#FF79DA, #bd9ae9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+}
+.hoverheart__content-light {
+  font-size: 1.5rem;
+  position: absolute;
+  opacity: 1;
+}
+
+.restaurant-page-menu .hoverheart:hover .hoverheart__content-solid {
+  opacity: 1;
+  transition: 0.3s ease-in-out;
+}
+.restaurant-page-menu .hoverheart:hover .hoverheart__content-light {
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.transition1
+{
+  opacity: 0;
+  animation: transition1 1s ease-in-out forwards 0s;
+}
+
+.transition2
+{
+  opacity: 0;
+  animation: transition2 2s ease-in-out forwards 0s;
+}
+
+.transition3
+{
+  opacity: 0;
+  animation: transition3 3s ease-in-out forwards 0s;
+}
+
+@keyframes transition1 {
+  0%{
+    opacity: 0;
+
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes transition2{
+
+    0%{
+      opacity: 0;
+  
+    }
+    100%{
+      opacity: 1;
+    }
+  }
+
+@keyframes transition3{
+
+  0%{
+    opacity: 0;
+
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+header
+{
+  width: 55%;
+  margin: 40px 0px 10px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header_titre {
+  display: flex;
+  justify-content: center;
+}
+
+.bloc_h1
+{
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 0px 20px 0px;
+}
+
+.bloc_menu{
+  margin: -30px 0 0 0;
+  padding: 20px 10px 20px 10px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  background-color: white;
+}
+
+.bloc_repas
+{
+  width: 113%;
+  display: flex;
+}
+
+.bloc_carte
+{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+.menuItem{
+  background-color: #fff;
+  padding: 1rem;
+  display: flex;
+  border-radius: 0.75rem;
+  margin: 1rem 0;
+  box-shadow: 0.25rem 0.25rem 1rem rgb(0 0 0 / 10%);
+  overflow: hidden;
+  max-width: 90%;
+}
+
+.menuItem_header
+{
+  width: 95%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.menuItem_title{
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.menuItem_description{
+  margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.menuItem_price{
+  display: flex;
+  align-items: flex-end;
+}
+
+.menuItem_confirmation{  
+  background-color: #99e2d0;
+  margin: -1rem -5rem -1rem 1rem;
+  width: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: .5s;
+  }
+  
+.menuItem_wrapIcon{
+  height: 1.6rem;
+  width: 1.6rem;
+  color: #99e2d0;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  transform: rotate(-360deg);
+  transition-duration: .5s;
+}
+
+.fa-check{
+  color: #99e2d0;
+}
+
+.menuItem:hover .menuItem_confirmation {
+  margin-right: -1rem;
+
+}
+
+.menuItem:hover .menuItem_wrapIcon{
+  transform: rotate(0);
+}
+
+.bloc_paragraphe
+{
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 16px;
+  margin-right: 5px;
+}
+
+.bloc_btn_commander
+{
+  display: flex;
+  justify-content: center;
+  margin: 30px 0px 30px 0px;
+}
+
+.btn_commander 
+{
+  width: 20%;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 25px;
+  color: white;
+  background: linear-gradient(#FF79DA, #9356DC);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #353535;
+  padding-bottom: 20px;
+}
+
+.bloc_footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  padding: 20px 0px 0px 0px;
+}
+
+.bloc_footer_titres 
+{
+  color: white;
+  list-style-type: none;
+}
+
+.footer_texte
+{
+  font-weight: 500;
+}
+
+a.lien_contact
+  {
+    color: white;
+    text-decoration: none;
+  }
+
+@media screen and (max-width: 700px)
+{
+
+  body {
+    max-width: 375px;
+  }
+  
+  .h2_trait 
+  {
+    width: 12%;
+    margin-top: 5px;
+    height: 3px;
+    background-color: #99e2d0;
+    border: none;
+  }
+
+  .entrees_plats_desserts{
+    width: 100%;
+  }
+  
+  h3
+  {
+    font-size: 16px;
+    padding-bottom: 5px;
+  }
+  
+  .fa-utensils, .fa-handshake-angle 
+  {
+    color: white;
+    margin-right: 12px;
+    font-size: 13px;
+  }
+  
+  header
+  {
+    width: 75%;
+    margin: 30px 0px 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header_titre {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .header_logo 
+  {
+    width: 165px;
+    height: 30px;
+  }
+  
+  .footer_logo
+  {
+    filter: invert(1);
+    margin-bottom: 10px;
+    width: 100px;
+    height: 40px;
+  }
+
+  
+  .bloc_h1
+  {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0px 10px 0px;
+  }
+
+  .menuItem{
+    background-color: #fff;
+    padding: 1rem;
+    display: flex;
+    border-radius: 0.75rem;
+    margin: 10px 0px 10px 0px;
+    box-shadow: 0.25rem 0.25rem 1rem rgb(0 0 0 / 10%);
+    overflow: hidden;
+    max-width: 100%;
+  }
+  
+.bloc_repas
+{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.bloc_carte
+{
+  width: 100%;
+}
+
+  .btn_commander
+  {
+    width: 50%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 25px;
+    color: white;
+    background: linear-gradient(#FF79DA, #9356DC);
+    text-decoration: none;
+    font-weight: 100;
+    font-size: 16px;
+  }
+  
+.footer 
+{
+    display: flex;
+    flex-direction: column;
+    background-color: #353535;
+    padding-bottom: 20px;
+  }
+  .bloc_footer 
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+    gap: 0px;
+    padding: 20px 0px 30px 20px;
+  }
+
+.bloc_footer_titres 
+  {
+    display: flex;
+    flex-direction: column;
+    list-style-type:none;
+    gap: 8px;
+    color: white;
+    list-style-type: none ;
+  }
+
+a.lien_contact
+  {
+    color: white;
+    text-decoration: none;
+  }
+  
+}
+
+/*# sourceMappingURL=pagemenu1.css.map */

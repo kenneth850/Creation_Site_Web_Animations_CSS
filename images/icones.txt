@@ -1,0 +1,17 @@
+heart : <i class="fa-light fa-heart"></i>
+
+forch knife : <i class="fa-solid fa-utensils"></i>
+
+handscheck : <i class="fa-solid fa-handshake-angle"></i>
+
+check : <i class="fa-regular fa-circle-check"></i>
+
+ipad : <i class="fa-solid fa-tablet-screen-button"></i>
+
+list : <i class="fa-light fa-list"></i>
+
+shop : <i class="fa-solid fa-store"></i>
+
+position : <i class="fa-solid fa-location-dot"></i>
+
+Flèche : <i class="fa-solid fa-arrow-left"></i>
