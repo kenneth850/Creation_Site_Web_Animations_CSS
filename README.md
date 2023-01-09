@@ -46,4 +46,4 @@ Convention nommage commit
 Gitmoji https://gitmoji.carloscuesta.me/
 
 Tester le projet
-Pour tester simplement & rapidement, veuillez préférer visiter la démo en ligne : [ohmyfood.mathisbarre.com](https://kenneth850.github.io/ohmyfood_KennethVandenbilcke)
+Pour tester simplement & rapidement, veuillez préférer visiter la démo en ligne : https://kenneth850.github.io/ohmyfood_KennethVandenbilcke
