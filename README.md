@@ -29,4 +29,4 @@ Maquette mobile : oui
 Compatibilité : Dernières versions de Chrome, Firefox
 
 Tester le projet
-Pour tester simplement & rapidement, veuillez préférer visiter la démo en ligne : https://kenneth850.github.io/ohmyfood_KennethVandenbilcke
+Pour tester simplement & rapidement, veuillez préférer visiter la démo en ligne : https://kenneth850.github.io/Creation_Site_Web_Animations_CSS/
